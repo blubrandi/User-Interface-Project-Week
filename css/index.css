@@ -133,4 +133,21 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/* Your Code Goes Here */
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: purple;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 1.6rem;
+  box-sizing: border-box;
+}
+h1 {
+  font-size: 2rem;
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
