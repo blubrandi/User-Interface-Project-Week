@@ -188,7 +188,6 @@ footer .caption-text {
 .home .hero .heading-box {
   position: absolute;
   bottom: 20px;
-  border: 2px solid red;
 }
 .home .hero h2 {
   font-size: 4rem;
@@ -208,34 +207,41 @@ footer .caption-text {
   padding-bottom: 2rem;
   font-weight: 700;
 }
-.home .recent .section-heading h2 {
+.home .recent .img-box img {
+  min-width: 100%;
+}
+.home .recent .img-heading {
+  position: relative;
+}
+.home .recent h2 {
   font-size: 2.5rem;
   padding-bottom: 2rem;
   padding-left: 2rem;
   font-weight: 700;
 }
-.home .recent .full .img-box {
-  z-index: 1;
-}
-.home .recent .full .img-box img {
-  border: 5px solid purple;
-  max-width: 60%;
-}
-.home .recent .heading-box {
-  margin: 0 auto;
-  width: 90%;
-  margin-bottom: 2rem;
+.home .recent .recent-heading-box {
+  position: absolute;
+  top: 40;
+  right: 0;
+  bottom: 40;
+  left: 0;
+  margin: auto;
+  margin-top: -20px;
+  text-align: center;
   background-color: #d8d8d8;
-  border: 2px solid red;
-  margin-top: -60px;
-  z-index: 9999;
+  width: 90%;
 }
-.home .recent .heading-box h3 {
-  font-size: 2rem;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 1.1rem;
+.home .recent .recent-heading-box h3 {
   padding-top: 3rem;
   padding-bottom: 3rem;
-  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+}
+.home .bottom-spaced {
+  padding-bottom: 2rem;
+}
+.home .top-spaced {
+  padding-top: 6rem;
 }
