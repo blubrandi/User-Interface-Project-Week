@@ -162,11 +162,11 @@ nav .container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0.5rem;
+  padding: 1.5rem;
   align-items: baseline;
 }
-h1 {
-  font-size: 2rem;
+nav .container h1 {
+  font-size: 3rem;
   color: #fff;
 }
 footer {
@@ -179,11 +179,22 @@ footer .caption-text {
 .home .hero {
   background-image: url('../img/home/home-jumbotron.png');
   background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  min-height: 260px;
+  position: relative;
 }
-.home h2 {
+.home .hero .heading-box {
+  position: absolute;
+  bottom: 20px;
+  border: 2px solid red;
+}
+.home .hero h2 {
   font-size: 4rem;
-  line-height: 75px;
-  font-weight: bold;
+  line-height: 4rem;
+  padding-left: 2rem;
+  font-weight: 400;
   color: #fff;
 }
 .home .content-box {
@@ -191,4 +202,9 @@ footer .caption-text {
   flex-direction: column;
   flex-wrap: wrap;
   padding: 1.5rem;
+}
+.home .content-box h3 {
+  font-size: 2.5rem;
+  padding-bottom: 2rem;
+  font-weight: 700;
 }
