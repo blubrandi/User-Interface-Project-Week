@@ -208,3 +208,34 @@ footer .caption-text {
   padding-bottom: 2rem;
   font-weight: 700;
 }
+.home .recent .section-heading h2 {
+  font-size: 2.5rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  font-weight: 700;
+}
+.home .recent .full .img-box {
+  z-index: 1;
+}
+.home .recent .full .img-box img {
+  border: 5px solid purple;
+  max-width: 60%;
+}
+.home .recent .heading-box {
+  margin: 0 auto;
+  width: 90%;
+  margin-bottom: 2rem;
+  background-color: #d8d8d8;
+  border: 2px solid red;
+  margin-top: -60px;
+  z-index: 9999;
+}
+.home .recent .heading-box h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1.1rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  text-align: center;
+}
