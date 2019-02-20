@@ -172,9 +172,52 @@ nav .container h1 {
 footer {
   background-color: #828282;
   color: #fff;
+  padding: 20px 20px;
+}
+footer h4 {
+  font-weight: 700;
+  font-size: 1.9rem;
+  padding-bottom: 0.5rem;
 }
 footer .caption-text {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
+}
+footer .footer-box-sm {
+  padding: 20px 0;
+}
+footer .email-input {
+  width: 100%;
+  margin: 10px 0;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 16px;
+  padding-left: 10px;
+}
+@media (min-width: 768px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .top-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  footer .top-row .footer-box-sm {
+    padding: 0;
+  }
+}
+@media (min-width: 1440px) {
+  footer .top-row {
+    width: 80%;
+    margin: 0 auto;
+  }
+  footer .bottom-row {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+    text-align: center;
+  }
 }
 .home .hero {
   background-image: url('../img/home/home-jumbotron.png');
@@ -248,9 +291,6 @@ footer .caption-text {
   position: absolute;
   right: 0;
   left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 0 auto;
   margin-top: -20px;
   background-color: #d8d8d8;
@@ -263,14 +303,7 @@ footer .caption-text {
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 1rem;
-}
-@media (min-width: 768px) {
-  .home .recent .recent-heading-box .recent-heading-box {
-    max-width: 30%;
-  }
-  .home .recent .recent-heading-box .recent-heading-box .right-aligned {
-    align-items: flex-end;
-  }
+  text-align: center;
 }
 .home .recent .desktop-hidden {
   display: block;
@@ -309,5 +342,9 @@ footer .caption-text {
   .home .home-content {
     max-width: 800px;
     margin: 0 auto;
+  }
+  .home .recent-heading-box {
+    max-width: 400px;
+    border: 2px solid red;
   }
 }

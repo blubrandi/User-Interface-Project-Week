@@ -90,17 +90,13 @@
 
         .recent-heading-box {
             position: absolute;
-            // top: 40;
             right: 0;
-            // bottom: 40;
             left: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             margin: 0 auto;
             margin-top: -20px;
             background-color: @ltgrey;
             width: 90%;
+
 
 
             h3 {
@@ -110,18 +106,10 @@
                 font-weight: 400;
                 text-transform: uppercase;
                 letter-spacing: 1rem;
+                text-align: center;
             }
 
-            @media (min-width: 768px) {
-                .recent-heading-box {
-                    max-width: 30%;
-
-                    .right-aligned {
-                        align-items: flex-end;
-                    }
-                }
-
-            }
+            
         }
 
         .desktop-hidden {
@@ -176,6 +164,11 @@
             max-width: 800px;
             margin: 0 auto;
         }
+
+        .recent-heading-box {
+            max-width:400px;
+            border: 2px solid red;
+            }
     }
 
 }

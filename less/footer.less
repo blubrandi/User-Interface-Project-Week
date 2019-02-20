@@ -2,8 +2,57 @@
 footer {
     background-color: @medgrey;
     color: @white;
+    padding: 20px 20px;
+
+    h4 {
+        font-weight: 700;
+        font-size: 1.9rem;
+        padding-bottom: .5rem;
+    }
 
     .caption-text {
-        font-size: .9rem;
+        font-size: 1.2rem;
+    }
+
+    .footer-box-sm {
+        padding: 20px 0;
+    }
+
+    .email-input {
+        width: 100%;
+        margin: 10px 0;
+        height: 30px;
+        border-radius: 5px;
+        font-size: 16px;
+        padding-left: 10px;
+    }
+
+    @media (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+
+        .top-row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .footer-box-sm {
+                padding: 0;
+            }
+        }
+    }
+
+    @media (min-width: 1440px) {
+        .top-row {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .bottom-row {
+            width: 80%;
+            margin: 0 auto;
+            padding-top: 20px;
+            text-align: center;
+        }
     }
 }
