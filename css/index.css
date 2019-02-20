@@ -196,16 +196,41 @@ footer .caption-text {
   font-weight: 400;
   color: #fff;
 }
+@media (min-width: 768px) {
+  .home .hero {
+    min-height: 420px;
+    background-position: bottom;
+  }
+}
 .home .content-box {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   padding: 1.5rem;
 }
 .home .content-box h3 {
   font-size: 2.5rem;
   padding-bottom: 2rem;
   font-weight: 700;
+}
+@media (min-width: 768px) {
+  .home .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .home .row:nth-child(1) {
+    flex-direction: row-reverse;
+  }
+  .home .sm-box {
+    max-width: 44%;
+  }
+  .home .cta .row {
+    padding-top: 40px;
+  }
+  .home .cta .row:last-child {
+    padding-bottom: 40px;
+  }
 }
 .home .recent .img-box img {
   min-width: 100%;
@@ -221,13 +246,13 @@ footer .caption-text {
 }
 .home .recent .recent-heading-box {
   position: absolute;
-  top: 40;
   right: 0;
-  bottom: 40;
   left: 0;
-  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
   margin-top: -20px;
-  text-align: center;
   background-color: #d8d8d8;
   width: 90%;
 }
@@ -239,9 +264,50 @@ footer .caption-text {
   text-transform: uppercase;
   letter-spacing: 1rem;
 }
+@media (min-width: 768px) {
+  .home .recent .recent-heading-box .recent-heading-box {
+    max-width: 30%;
+  }
+  .home .recent .recent-heading-box .recent-heading-box .right-aligned {
+    align-items: flex-end;
+  }
+}
+.home .recent .desktop-hidden {
+  display: block;
+}
+.home .recent .mobile-hidden {
+  display: none;
+}
+@media (min-width: 768px) {
+  .home .recent body {
+    background-color: red;
+  }
+  .home .recent .desktop-hidden {
+    display: none;
+  }
+  .home .recent .mobile-hidden {
+    display: block;
+  }
+  .home .recent .row {
+    flex-direction: column;
+  }
+}
+@media (min-width: 768px) {
+  .home .recent .content-box {
+    max-width: 400px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
 .home .bottom-spaced {
   padding-bottom: 2rem;
 }
 .home .top-spaced {
   padding-top: 6rem;
+}
+@media (min-width: 768px) {
+  .home .home-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
 }

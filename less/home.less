@@ -22,18 +22,50 @@
             font-weight: 400;
             color: @white;
         }
+
+        @media (min-width: 768px) {
+            min-height: 420px;
+            background-position: bottom;
+        }
     }
 
     .content-box {
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
+        // flex-wrap: wrap;
         padding: 1.5rem;
 
         h3 {
             font-size: 2.5rem;
             padding-bottom: 2rem;
             font-weight: 700;
+        }
+
+
+    }
+
+    @media (min-width: 768px) {
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            &:nth-child(1) {
+                flex-direction: row-reverse;
+            }
+        }
+        .sm-box {
+            max-width: 44%;
+        }
+
+        .cta .row {
+            padding-top: 40px;
+
+            &:last-child {
+                padding-bottom: 40px;
+            }
         }
     }
 
@@ -58,16 +90,18 @@
 
         .recent-heading-box {
             position: absolute;
-            top: 40;
+            // top: 40;
             right: 0;
-            bottom: 40;
+            // bottom: 40;
             left: 0;
-            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
             margin-top: -20px;
-            text-align: center;
-            
             background-color: @ltgrey;
             width: 90%;
+
 
             h3 {
                 padding-top: 3rem;
@@ -77,8 +111,56 @@
                 text-transform: uppercase;
                 letter-spacing: 1rem;
             }
+
+            @media (min-width: 768px) {
+                .recent-heading-box {
+                    max-width: 30%;
+
+                    .right-aligned {
+                        align-items: flex-end;
+                    }
+                }
+
+            }
+        }
+
+        .desktop-hidden {
+            display: block;
+        }
+
+        .mobile-hidden {
+            display: none;
+        }
+        
+        @media (min-width: 768px){
+
+            body {
+                background-color: red;
+            }
+            .desktop-hidden {
+                display: none;
+            }
+    
+            .mobile-hidden {
+                display: block;
+    
+            }
+    
+            .row {
+                flex-direction: column;
+            }
+        }
+
+        @media (min-width: 768px) {
+        .content-box {
+            max-width: 400px;
+            margin-top: 60px;
+            margin-bottom: 60px;
         }
     }
+
+    }
+
 
     .bottom-spaced {
         
@@ -87,6 +169,13 @@
 
     .top-spaced {
         padding-top: 6rem;
+    }
+
+    @media (min-width: 768px) {
+        .home-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
     }
 
 }
