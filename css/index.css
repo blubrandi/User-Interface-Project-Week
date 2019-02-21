@@ -398,3 +398,43 @@ footer .email-input {
     display: none;
   }
 }
+.services .hero {
+  background-image: url('../img/services/services-jumbotron.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 250px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.services .hero .heading-box {
+  position: absolute;
+  bottom: 20px;
+}
+.services .hero h1 {
+  font-size: 4rem;
+  line-height: 4rem;
+  padding-left: 2rem;
+  font-weight: 400;
+  color: #fff;
+}
+@media (min-width: 768px) {
+  .services .hero {
+    height: 250px;
+    background-position: bottom;
+  }
+}
+.services .content-box {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.services .content-box h3 {
+  font-size: 2.5rem;
+  padding-bottom: 2rem;
+  font-weight: 700;
+}

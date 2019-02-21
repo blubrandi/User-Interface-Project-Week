@@ -1,0 +1,49 @@
+
+.services {
+    .hero {
+        background-image: url('../img/services/services-jumbotron.png');
+        background-size:  cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        min-height: 250px;
+        max-width: 1280px;
+        margin: 0 auto;
+
+        .heading-box {
+           position: absolute;
+           bottom: 20px;
+        }
+
+        h1 {
+            font-size: 4rem;
+            line-height: 4rem;
+            padding-left: 2rem;
+            font-weight: 400;
+            color: @white;
+        }
+
+        @media (min-width: 768px) {
+            height: 250px;
+            background-position: bottom;
+        }
+    }
+
+    .content-box {
+        display: flex;
+        flex-direction: column;
+        // flex-wrap: wrap;
+        padding: 1.5rem;
+        max-width: 1280px;
+        margin: 0 auto;
+
+        h3 {
+            font-size: 2.5rem;
+            padding-bottom: 2rem;
+            font-weight: 700;
+        }
+
+
+    }
+}
