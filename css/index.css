@@ -440,6 +440,8 @@ footer .email-input {
 }
 .services .content-box .intro-text {
   padding-bottom: 3rem;
+  max-width: 900px;
+  margin: 0 auto;
 }
 .services .content-box .tabs-links {
   display: flex;
@@ -448,35 +450,45 @@ footer .email-input {
   font-weight: 700;
 }
 .services .content-box .tabs-links :hover {
-  background-color: #5e9fb9;
+  background-color: #222;
   color: #fff;
 }
 @media (min-width: 768px) {
   .services .content-box .tabs-links {
+    max-width: 900px;
+    margin: 0 auto;
     flex-direction: row;
     justify-content: space-between;
   }
 }
-.services .content-box .tabs-links .tab-link {
+.services .content-box .tabs-links .tabs-link {
   padding: 2rem;
   border: 2px solid #222;
   margin: 0.5rem;
 }
 @media (min-width: 768px) {
-  .services .content-box .tabs-links .tab-link {
-    margin: 3rem 2rem;
+  .services .content-box .tabs-links .tabs-link {
     width: 200px;
   }
+}
+.services .content-box .tabs-links .selected {
+  background-color: #5e9fb9;
+  color: #fff;
 }
 .services .content-box .tabs-item-description {
   display: flex;
   flex-direction: column;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+.services .content-box .tabs-item-description p {
+  padding-top: 2rem;
   padding-bottom: 2rem;
 }
 @media (min-width: 768px) {
   .services .content-box .tabs-item-description {
     flex-direction: row;
-    max-width: 700px;
+    max-width: 900px;
     justify-content: space-between;
     align-items: center;
   }
@@ -494,7 +506,7 @@ footer .email-input {
   }
 }
 .services h2 {
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: 900;
   padding-top: 1.6rem;
   padding-bottom: 1.6rem;

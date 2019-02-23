@@ -46,6 +46,8 @@
 
         .intro-text {
             padding-bottom: 3rem;
+            max-width: 900px;
+            margin: 0 auto;
         }
 
         .tabs-links {
@@ -55,16 +57,18 @@
             font-weight: 700;
             // padding: 2 rem;
             :hover {
-                background-color: @teal;
+                background-color: @dkgrey;
                 color: @white;
             }
 
             @media (min-width: 768px) {
+                max-width: 900px;
+                margin: 0 auto;
                 flex-direction: row;
                 justify-content: space-between;
             }
 
-            .tab-link {
+            .tabs-link {
                 padding: 2rem;
                 border: 2px solid @dkgrey;
                 margin: .5rem;
@@ -72,9 +76,13 @@
                 
 
                 @media (min-width: 768px) {
-                    margin: 3rem 2rem;
                     width: 200px;
                 }
+            }
+
+            .selected {
+                background-color: @teal;
+                color: @white;
             }
 
 
@@ -83,11 +91,17 @@
         .tabs-item-description {
             display: flex;
             flex-direction: column;
-            padding-bottom: 2rem;
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+
+            p {
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+            }
 
             @media (min-width: 768px) {
                 flex-direction: row;
-                max-width: 700px;
+                max-width: 900px;
                 justify-content: space-between;
                 align-items: center;
             }
@@ -113,7 +127,7 @@
     }
 
     h2 {
-        font-size: 1.6rem;
+        font-size: 2rem;
         font-weight: 900;
         padding-top: 1.6rem;
         padding-bottom: 1.6rem;
