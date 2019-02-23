@@ -34,7 +34,7 @@
         display: flex;
         flex-direction: column;
         // flex-wrap: wrap;
-        padding: 1.5rem;
+        padding: 3.5rem;
         max-width: 1280px;
         margin: 0 auto;
 
@@ -44,6 +44,69 @@
             font-weight: 700;
         }
 
+        .intro-text {
+            padding-bottom: 3rem;
+        }
 
+        .tabs-links {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            font-weight: 700;
+            // padding: 2 rem;
+            :hover {
+                background-color: @teal;
+                color: @white;
+            }
+
+            @media (min-width: 768px) {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .tab-link {
+                padding: 2rem;
+                border: 2px solid @dkgrey;
+                margin: .5rem;
+
+                
+
+                @media (min-width: 768px) {
+                    margin: 3rem 2rem;
+                    width: 200px;
+                }
+            }
+
+
+        }
+
+        .tabs-item-description {
+            padding-bottom: 2rem;
+
+        }
+
+        .tab-text {
+
+            @media (min-width: 768px) {
+                max-width: 48%;
+            }
+        }
+
+        .tabs-items {
+
+            @media (min-width: 768px) {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+        }
+
+    }
+
+    h2 {
+        font-size: 1.6rem;
+        font-weight: 900;
+        padding-top: 1.6rem;
+        padding-bottom: 1.6rem;
     }
 }
