@@ -155,10 +155,49 @@ body {
   font-weight: 400;
   src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
 }
+.menu {
+  position: fixed;
+  background-color: #222;
+  opacity: 0.9;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  z-index: 2;
+  min-height: 100vh;
+  width: 100%;
+}
+.menu .top {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  display: flex;
+  flex-direction: row;
+  max-height: 80px;
+}
+.menu .dropdown-content {
+  margin-top: 20%;
+}
+.menu a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 3rem;
+}
+.menu li {
+  padding-bottom: 3rem;
+}
+.menu img:hover {
+  cursor: pointer;
+}
+.menu-hidden {
+  display: none;
+}
 nav {
   background-color: #98A4AF;
   max-width: 1280px;
   margin: 0 auto;
+  height: 60px;
+  z-index: 1;
 }
 nav .container {
   display: flex;
@@ -170,6 +209,9 @@ nav .container {
 nav .container h1 {
   font-size: 3rem;
   color: #fff;
+}
+nav img:hover {
+  cursor: pointer;
 }
 footer {
   background-color: #828282;

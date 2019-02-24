@@ -34,3 +34,14 @@ class TabItem {
     }
 }
 let links = document.querySelectorAll('.tabs-link').forEach(link => new TabLink(link))
+
+//nav JS
+
+
+document.querySelector('.toggleButton1').addEventListener('click', function () {
+    document.querySelector('.menu').classList.remove('menu-hidden')
+})
+
+document.querySelector('.toggleButton2').addEventListener('click', function () {
+    document.querySelector('.menu').classList.add('menu-hidden')
+})
